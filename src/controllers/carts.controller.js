@@ -1,18 +1,19 @@
 import { cartService } from "../services/carts.service.js";
 import { productsService } from "../services/products.service.js";
 import { ticketService } from "../services/ticket.service.js";
+import { NotFoundError, ValidationError } from "../utils/customErrors.js";
 
 class CartsController {
-  async getAll(req, res) {
+  async getAll(req, res, next) {
     try {
       const carts = await cartService.getAllCarts();
       res.json(carts);
     } catch (error) {
-      res.status(500).json({ error: "Error al obtener los carritos" });
+      next(error);
     }
   }
 
-  async getById(req, res) {
+  async getById(req, res, next) {
     const { cartId } = req.params;
     try {
       const cart = await cartService.getCartById(cartId);
@@ -21,20 +22,20 @@ class CartsController {
       }
       res.json(cart);
     } catch (error) {
-      res.status(500).json({ error: "Error al obtener el carrito" });
+      next(error);
     }
   }
 
-  async create(req, res) {
+  async create(req, res, next) {
     try {
       const newCart = await cartService.createCart();
       res.status(201).json(newCart);
     } catch (error) {
-      res.status(500).json({ error: "Error al crear el carrito" });
+      next(error);
     }
   }
 
-  async addProductToCart(req, res) {
+  async addProductToCart(req, res, next) {
     const { cartId, productId } = req.params;
     try {
       const product = await productsService.getById(productId);
@@ -44,22 +45,22 @@ class CartsController {
       const updatedCart = await cartService.addProductToCart(cartId, productId);
       res.json(updatedCart);
     } catch (error) {
-      res.status(500).json({ error: error.message });
+      next(error);
     }
   }
 
-  async updateCart(req, res) {
+  async updateCart(req, res, next) {
     const { cartId } = req.params;
     const { products } = req.body;
     try {
       const updatedCart = await cartService.updateCart(cartId, products);
       res.json(updatedCart);
     } catch (error) {
-      res.status(500).json({ error: "Error al actualizar el carrito" });
+      next(error);
     }
   }
 
-  async updateProductQuantity(req, res) {
+  async updateProductQuantity(req, res, next) {
     const { cartId, productId } = req.params;
     const { quantity } = req.body;
     if (!Number.isInteger(quantity) || quantity < 1) {
@@ -69,31 +70,31 @@ class CartsController {
       const updatedCart = await cartService.updateProductQuantity(cartId, productId, quantity);
       res.json(updatedCart);
     } catch (error) {
-      res.status(500).json({ error: "Error al actualizar la cantidad del producto" });
+      next(error);
     }
   }
 
-  async removeProductFromCart(req, res) {
+  async removeProductFromCart(req, res, next) {
     const { cartId, productId } = req.params;
     try {
       const updatedCart = await cartService.removeProductFromCart(cartId, productId);
       res.json(updatedCart);
     } catch (error) {
-      res.status(500).json({ error: "Error al eliminar el producto del carrito" });
+      next(error);
     }
   }
 
-  async clearCart(req, res) {
+  async clearCart(req, res, next) {
     const { cartId } = req.params;
     try {
       const clearedCart = await cartService.clearCart(cartId);
       res.json({ message: "Todos los productos eliminados del carrito", clearedCart });
     } catch (error) {
-      res.status(500).json({ error: "Error al eliminar productos del carrito" });
+      next(error);
     }
   }
 
-  async purchase(req, res) {
+  async purchase(req, res, next) {
     const { cartId } = req.params;
     try {
       const cart = await cartService.getCartById(cartId);
@@ -142,8 +143,7 @@ class CartsController {
         });
       }
     } catch (error) {
-      console.error("Error al finalizar la compra:", error);
-      res.status(500).json({ error: "Error al finalizar la compra" });
+      next(error);
     }
   }
 }

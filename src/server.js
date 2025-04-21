@@ -21,6 +21,7 @@ import { sessionRouter } from "./routes/session.routes.js";
 import { initSocket } from "./socket.js";
 import { authRouter } from "./routes/auth.routes.js";
 import { cartService } from "./services/carts.service.js";
+import { errorHandler } from "./middlewares/errorHandler.middleware.js";
 
 const app = express();
 export const SECRET = "clavesecreta";
@@ -112,10 +113,7 @@ const startServer = async () => {
   app.use("/", authRouter);
 
 
-  app.use((err, req, res, next) => {
-    console.error("Error:", err.message);
-    res.status(500).send("Ocurrió un error interno en el servidor");
-  });
+  app.use(errorHandler);
 
   const server = createServer(app);
   initSocket(server);
