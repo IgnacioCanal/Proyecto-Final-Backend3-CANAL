@@ -2,10 +2,14 @@ import { cartService } from "../services/carts.service.js";
 import { productsService } from "../services/products.service.js";
 import { ticketService } from "../services/ticket.service.js";
 import { NotFoundError, ValidationError } from "../utils/customErrors.js";
+import { getLogger } from "../utils/logger.js";
+
+const logger = getLogger();
 
 class CartsController {
   async getAll(req, res, next) {
     try {
+      logger.info('Obteniendo todos los carritos');
       const carts = await cartService.getAllCarts();
       res.json(carts);
     } catch (error) {

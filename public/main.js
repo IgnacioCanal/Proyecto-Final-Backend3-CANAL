@@ -1,3 +1,7 @@
+import {getLogger} from "../src/utils/logger.js";
+import {io} from "socket.io-client";
+
+const logger = getLogger();
 const socket = io();
 
 const showToast = (message, type = "success") => {
@@ -97,7 +101,7 @@ async function addToCart(productId) {
 
     if (response.ok) {
       const updatedCart = await response.json();
-      console.log("Producto agregado al carrito:", updatedCart);
+      logger.info("Producto agregado al carrito:", updatedCart);
 
       Toastify({
         text: "Producto agregado al carrito",
@@ -118,7 +122,7 @@ async function addToCart(productId) {
       }).showToast();
     }
   } catch (error) {
-    console.error("Error al agregar al carrito:", error);
+    logger.error("Error al agregar al carrito:", error);
     Toastify({
       text: "Error al agregar el producto al carrito: " + error.message,
       duration: 3000,
@@ -177,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }).showToast();
         }
       } catch (error) {
-        console.error("Error al eliminar el producto del carrito:", error);
+        logger.error("Error al eliminar el producto del carrito:", error);
         Toastify({
           text: "Error al eliminar el producto del carrito.",
           duration: 3000,
@@ -234,7 +238,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }).showToast();
         }
       } catch (error) {
-        console.error("Error al eliminar todos los productos del carrito:", error);
+        logger.error("Error al eliminar todos los productos del carrito:", error);
         Toastify({
           text: "Error al eliminar todos los productos del carrito.",
           duration: 3000,
@@ -290,7 +294,7 @@ document.addEventListener("DOMContentLoaded", () => {
           window.location.reload();
         }
       } catch (error) {
-        console.error("Error al finalizar la compra:", error);
+        logger.error("Error al finalizar la compra:", error);
         Toastify({
           text: "Error al finalizar la compra.",
           duration: 3000,

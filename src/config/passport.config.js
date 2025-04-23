@@ -8,6 +8,9 @@ import { hashPassword, verifyPassword } from "../utils/password.utils.js";
 import { cartService } from "../services/carts.service.js";
 import { mailService } from "../services/mail.service.js";
 import { EMAIL_TYPES } from "../common/constants/emailTypes.js";
+import { getLogger } from "../utils/logger.js";
+
+const logger = getLogger();
 
 export function initializePassport() {
   passport.use("register",new LocalStrategy(
@@ -48,7 +51,7 @@ export function initializePassport() {
               type: EMAIL_TYPES.WELCOME,
             });
           } catch (mailError) {
-            console.error("Failed to send welcome email:", mailError);
+            logger.error("Failed to send welcome email:", mailError);
           }
 
           return done(null, user);

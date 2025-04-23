@@ -1,5 +1,8 @@
 import { cartDao } from "../DAOs/index.dao.js";
 import { NotFoundError, ValidationError } from "../utils/customErrors.js";
+import {getLogger} from "../utils/logger.js";
+
+const logger = getLogger();
 
 export class CartService {
   async createCart() {
@@ -13,6 +16,7 @@ export class CartService {
   async getCartById(cartId) {
     try {
       if (!cartId) throw new ValidationError("Falta el ID del carrito");
+      logger.debug(`Buscando carrito con ID: ${cartId}`);
       const cart = await cartDao.getCartById(cartId);
       if (!cart) throw new NotFoundError("Carrito no encontrado");
       return cart;

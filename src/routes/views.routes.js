@@ -4,6 +4,9 @@ import  { cartService } from "../services/carts.service.js";
 import { ticketService } from "../services/ticket.service.js";
 import { requireAdmin } from "../middlewares/role.middleware.js";
 import { validateId } from "../middlewares/validate.middleware.js";
+import {getLogger} from "../utils/logger.js";
+
+const logger = getLogger();
 
 
 export const viewsRoutes = Router();
@@ -26,7 +29,7 @@ viewsRoutes.get("/", async (req, res) => {
       currentUser: res.locals.currentUser
     });
   } catch (error) {
-    console.error("Error al obtener los productos:", error.message);
+    logger.error("Error al obtener los productos:", error.message);
     res.status(500).json({ error: "Error al obtener los productos" });
   }
 });
@@ -46,7 +49,7 @@ viewsRoutes.get("/realtimeproducts", requireAdmin, async (req, res) => {
       cartCount
     });
   } catch (error) {
-    console.error("Error al obtener los productos:", error.message);
+    logger.error("Error al obtener los productos:", error.message);
     res.status(500).json({ error: "Error al obtener los productos" });
   }
 });
@@ -65,7 +68,7 @@ viewsRoutes.get("/cart/:cartId", validateId, async (req, res) => {
       products: cart.products,
     });
   } catch (error) {
-    console.error("Error al obtener el carrito:", error.message);
+    logger.error("Error al obtener el carrito:", error.message);
     res.status(500).json({ error: "Error al obtener el carrito" });
   }
 });
@@ -78,7 +81,7 @@ viewsRoutes.get("/tickets", async (req, res) => {
     const tickets = await ticketService.getAll({ purchaser: req.user.email });
     res.render("tickets", { tickets });
   } catch (error) {
-    console.error("Error al obtener los tickets:", error);
+    logger.error("Error al obtener los tickets:", error);
     res.status(500).json({ error: "Error al obtener los tickets" });
   }
 });
@@ -92,7 +95,7 @@ viewsRoutes.get("/tickets/:ticketId", validateId, async (req, res) => {
     }
     res.render("ticket", { ticket, user: req.user });
   } catch (error) {
-    console.error("Error al obtener el ticket:", error);
+    logger.error("Error al obtener el ticket:", error);
     res.status(500).json({ error: "Error al obtener el ticket" });
   }
 });
@@ -102,7 +105,7 @@ viewsRoutes.get("/admin/tickets", requireAdmin, async (req, res) => {
     const tickets = await ticketService.getAll();
     res.render("adminTickets", { tickets });
   } catch (error) {
-    console.error("Error al obtener todos los tickets:", error);
+    logger.error("Error al obtener todos los tickets:", error);
     res.status(500).json({ error: "Error al obtener los tickets" });
   }
 });
@@ -112,7 +115,7 @@ viewsRoutes.get("/admin/carts", requireAdmin, async (req, res) => {
     const carts = await cartService.getAllCarts();
     res.render("adminCarts", { carts });
   } catch (error) {
-    console.error("Error al obtener todos los carritos:", error);
+    logger.error("Error al obtener todos los carritos:", error);
     res.status(500).json({ error: "Error al obtener los carritos" });
   }
 });

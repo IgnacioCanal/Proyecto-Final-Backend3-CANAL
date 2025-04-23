@@ -22,7 +22,10 @@ import { initSocket } from "./socket.js";
 import { authRouter } from "./routes/auth.routes.js";
 import { cartService } from "./services/carts.service.js";
 import { errorHandler } from "./middlewares/errorHandler.middleware.js";
+import { getLogger } from "./utils/logger.js";
+import { loggerRouter } from "./routes/logger.routes.js";
 
+const logger = getLogger();
 const app = express();
 export const SECRET = "clavesecreta";
 
@@ -60,11 +63,11 @@ const startServer = async () => {
     try {
       await mongodbProvider.connect(CONFIG.MONGO_URI);
     } catch (error) {
-      console.error("Failed to start server due to MongoDB connection error:", error);
+      logger.error("Failed to start server due to MongoDB connection error:", error);
       process.exit(1);
     }
   } else if (CONFIG.PERSISTENCE === PERSISTENCE.MEMORY) {
-    console.log("Using in-memory persistence");
+    logger.info("Using in-memory persistence");
   }
 
   initializePassport();
@@ -92,7 +95,7 @@ const startServer = async () => {
           res.locals.cartCount = 0;
         }
       } catch (error) {
-        console.error("Error en middleware de autenticación:", error);
+        logger.error("Error en middleware de autenticación:", error);
         req.user = null;
         res.locals.currentUser = null;
         res.locals.cartCount = 0;
@@ -105,13 +108,17 @@ const startServer = async () => {
     next();
   });
 
+  app.use((req, res, next) => {
+    logger.http(`${req.method} ${req.url}`);
+    next();
+  });
 
   app.use("/", viewsRoutes);
   app.use("/api/products", productsRouter);
   app.use("/api/carts", cartsRouter);
   app.use("/api/sessions", sessionRouter);
   app.use("/", authRouter);
-
+  app.use('/api/logger', loggerRouter);
 
   app.use(errorHandler);
 
@@ -121,7 +128,7 @@ const startServer = async () => {
 
 
   server.listen(CONFIG.PORT, () => {
-    console.log(`Server running on port http://localhost:${CONFIG.PORT}`);
+    logger.info(`Server running on port http://localhost:${CONFIG.PORT}`);
   });
 };
 
