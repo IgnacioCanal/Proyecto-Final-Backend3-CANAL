@@ -21,6 +21,8 @@ import { sessionRouter } from "./routes/session.routes.js";
 import { initSocket } from "./socket.js";
 import { authRouter } from "./routes/auth.routes.js";
 import { cartService } from "./services/carts.service.js";
+import { mocksRouter } from "./routes/mocks.router.js";
+import { usersRouter } from "./routes/users.router.js";
 import { errorHandler } from "./middlewares/errorHandler.middleware.js";
 import { getLogger } from "./utils/logger.js";
 import { loggerRouter } from "./routes/logger.routes.js";
@@ -119,6 +121,8 @@ const startServer = async () => {
   app.use("/api/sessions", sessionRouter);
   app.use("/", authRouter);
   app.use('/api/logger', loggerRouter);
+  app.use('/api/mocks', mocksRouter);
+  app.use('/api/users', usersRouter);
 
   app.use(errorHandler);
 

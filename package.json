@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@faker-js/faker": "^9.7.0",
     "@handlebars/allow-prototype-access": "^1.0.5",
     "bcryptjs": "^3.0.2",
     "commander": "^13.1.0",

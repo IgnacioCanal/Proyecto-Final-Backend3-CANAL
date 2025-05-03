@@ -1,17 +1,17 @@
 import { config } from "dotenv";
 import {getLogger} from "../utils/logger.js";
+import { CONFIG } from "../config/config.js";
+import { mongodbProvider } from "../config/mongodbProvider.js";
+import { userModel } from "../models/user.model.js";
+import { hashPassword } from "../utils/password.utils.js";
 
 const logger = getLogger();
 
 config();
 
-import connectDB from "../config/mongodb.js";
-import { userModel } from "../models/user.model.js";
-import { hashPassword } from "../utils/password.utils.js";
-
 async function createAdmin() {
   try {
-    await connectDB();
+    await mongodbProvider.connect(CONFIG.MONGO_URI);
     const email = "admin@gmail.com";
     const password = "admin123";
 
