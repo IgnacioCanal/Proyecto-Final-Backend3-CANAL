@@ -4,12 +4,12 @@ import { getLogger } from '../utils/logger.js';
 export const loggerRouter = Router();
 const logger = getLogger();
 
-loggerRouter.get('/logger', (req, res) => {
-  logger.debug('Log de prueba: debug');
-  logger.http('Log de prueba: http');
-  logger.info('Log de prueba: info');
-  logger.warning('Log de prueba: warning');
-  logger.error('Log de prueba: error');
-  logger.fatal('Log de prueba: fatal');
+loggerRouter.get('/', (req, res) => {
+  logger.debug('Log de prueba: DEBUG');
+  logger.http('Log de prueba: HTTP');
+  logger.info('Log de prueba: INFO');
+  logger.warning('Log de prueba: WARNING');
+  logger.error('Log de prueba: ERROR');
+  logger.fatal('Log de prueba: FATAL');
   res.send('Logs de prueba generados');
 });

@@ -1,16 +1,15 @@
-import { fa, faker } from '@faker-js/faker';
-import { hashPassword } from './password.utils.js';
+import { fakerES as faker } from '@faker-js/faker';
+import { hashPassword, verifyPassword } from './password.utils.js';
 import { userModel } from '../models/user.model.js';
 import { Product } from '../models/products.model.js';
 import { cartService } from '../services/carts.service.js';
 import  Cart  from '../models/carts.model.js';
 
-faker.locale = 'es';
 
 export const generateMockUsers = async (count) => {
   const users = [];
   for (let i = 0; i < count; i++) {
-    const cart = await cartService.createCart();
+    const cartId = faker.database.mongodbObjectId();
     const user = {
       _id: faker.database.mongodbObjectId(),
       first_name: faker.person.firstName(),
@@ -18,7 +17,7 @@ export const generateMockUsers = async (count) => {
       age: faker.number.int({ min: 18, max: 80 }),
       email: faker.internet.email(),
       password: await hashPassword('coder123'),
-      cartId: cart._id,
+      cartId: cartId,
       role: faker.helpers.arrayElement(['user', 'admin'])
     };
     users.push(user);

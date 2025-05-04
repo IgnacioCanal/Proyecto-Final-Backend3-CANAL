@@ -27,8 +27,9 @@ import { errorHandler } from "./middlewares/errorHandler.middleware.js";
 import { getLogger } from "./utils/logger.js";
 import { loggerRouter } from "./routes/logger.routes.js";
 
-const logger = getLogger();
 const app = express();
+const logger = getLogger();
+
 export const SECRET = "clavesecreta";
 
 const hbs = exphbs.create({
