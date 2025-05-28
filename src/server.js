@@ -26,6 +26,8 @@ import { usersRouter } from "./routes/users.router.js";
 import { errorHandler } from "./middlewares/errorHandler.middleware.js";
 import { getLogger } from "./utils/logger.js";
 import { loggerRouter } from "./routes/logger.routes.js";
+import swaggerUI from "swagger-ui-express";
+import swaggerSpec from "./config/swagger.js";
 
 const app = express();
 const logger = getLogger();
@@ -76,6 +78,7 @@ const startServer = async () => {
   initializePassport();
   app.use(passport.initialize());
 
+  app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerSpec));
 
   app.use(morgan("dev"));
   app.use(express.json());
