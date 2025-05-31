@@ -1,112 +1,23 @@
-
-[2025-05-05T20:28:08.905] [INFO] default - Connected to MongoDB
-[2025-05-05T20:28:08.912] [INFO] default - Server running on port http://localhost:8080
-[2025-05-05T20:28:11.190] [HTTP] default - GET /
-[2025-05-05T20:28:11.641] [INFO] default - Nuevo cliente conectado: kTkCmu6yCpy6uF-fAAAB
-[2025-05-05T20:28:11.834] [HTTP] default - GET /favicon.ico
-[2025-05-05T20:28:15.573] [HTTP] default - GET /login
-[2025-05-05T20:28:15.792] [INFO] default - Nuevo cliente conectado: NK9qyZGGcRP2_ELsAAAD
-[2025-05-05T20:28:23.254] [HTTP] default - POST /api/sessions/login
-[2025-05-05T20:28:23.497] [HTTP] default - GET /
-[2025-05-05T20:28:23.712] [INFO] default - Nuevo cliente conectado: AUaYCYWBiBuiQ0XvAAAF
-[2025-05-05T20:28:27.319] [HTTP] default - GET /realtimeproducts
-[2025-05-05T20:28:27.671] [INFO] default - Nuevo cliente conectado: 1Y_ATVeOSTtWH-J5AAAH
-[2025-05-05T20:28:29.681] [HTTP] default - GET /profile
-[2025-05-05T20:28:30.001] [INFO] default - Nuevo cliente conectado: Cp17BoTiu3wyzkJGAAAJ
-[2025-05-05T20:28:30.706] [HTTP] default - GET /api/sessions/logout
-[2025-05-05T20:28:30.710] [HTTP] default - GET /
-[2025-05-05T20:28:31.033] [INFO] default - Nuevo cliente conectado: SvFRXXYGgUxfK6o9AAAL
-[2025-05-05T20:28:32.171] [HTTP] default - GET /login
-[2025-05-05T20:28:32.489] [INFO] default - Nuevo cliente conectado: uLiGnCgIRelE2kdKAAAN
-[2025-05-05T20:28:40.525] [HTTP] default - POST /api/sessions/login
-[2025-05-05T20:28:40.583] [HTTP] default - GET /login?error=Usuario%20o%20contrase%C3%B1a%20incorrectos
-[2025-05-05T20:28:40.746] [INFO] default - Nuevo cliente conectado: f4a2plGKbfMbItBoAAAP
-[2025-05-05T20:28:43.163] [HTTP] default - GET /register
-[2025-05-05T20:28:43.386] [INFO] default - Nuevo cliente conectado: MjNOVSbv_7hXzpUVAAAR
-[2025-05-05T20:28:55.749] [HTTP] default - POST /api/sessions/register
-[2025-05-05T20:29:00.163] [HTTP] default - GET /login?message=register-success
-[2025-05-05T20:29:00.305] [INFO] default - Nuevo cliente conectado: -j3qxLzBf0QWMjurAAAT
-[2025-05-05T20:29:09.252] [HTTP] default - POST /api/sessions/login
-[2025-05-05T20:29:09.430] [DEBUG] default - Buscando carrito con ID: 681949b7bdbc28b765765f88
-[2025-05-05T20:29:09.489] [HTTP] default - GET /
-[2025-05-05T20:29:09.547] [DEBUG] default - Buscando carrito con ID: 681949b7bdbc28b765765f88
-[2025-05-05T20:29:09.778] [INFO] default - Nuevo cliente conectado: qjLOILH9USNgdICsAAAV
-[2025-05-05T20:29:12.634] [DEBUG] default - Buscando carrito con ID: 681949b7bdbc28b765765f88
-[2025-05-05T20:29:12.687] [HTTP] default - POST /api/carts/681949b7bdbc28b765765f88/products/68176fa79423fa7d0f9a0819
-[2025-05-05T20:29:12.950] [DEBUG] default - Buscando carrito con ID: 681949b7bdbc28b765765f88
-[2025-05-05T20:29:13.068] [HTTP] default - GET /
-[2025-05-05T20:29:13.133] [DEBUG] default - Buscando carrito con ID: 681949b7bdbc28b765765f88
-[2025-05-05T20:29:13.428] [INFO] default - Nuevo cliente conectado: gNwKMvZhA31nAl1TAAAX
-[2025-05-05T20:29:14.304] [DEBUG] default - Buscando carrito con ID: 681949b7bdbc28b765765f88
-[2025-05-05T20:29:14.409] [HTTP] default - GET /cart/681949b7bdbc28b765765f88
-[2025-05-05T20:29:14.410] [DEBUG] default - Buscando carrito con ID: 681949b7bdbc28b765765f88
-[2025-05-05T20:29:14.766] [INFO] default - Nuevo cliente conectado: WfDgqfRuCk4kYH0YAAAZ
-[2025-05-05T20:29:16.549] [DEBUG] default - Buscando carrito con ID: 681949b7bdbc28b765765f88
-[2025-05-05T20:29:16.658] [HTTP] default - DELETE /api/carts/681949b7bdbc28b765765f88/products/68176fa79423fa7d0f9a0819
-[2025-05-05T20:29:16.893] [DEBUG] default - Buscando carrito con ID: 681949b7bdbc28b765765f88
-[2025-05-05T20:29:16.946] [HTTP] default - GET /cart/681949b7bdbc28b765765f88
-[2025-05-05T20:29:16.947] [DEBUG] default - Buscando carrito con ID: 681949b7bdbc28b765765f88
-[2025-05-05T20:29:17.153] [INFO] default - Nuevo cliente conectado: LTJf15MAkhlNtedUAAAb
-[2025-05-05T20:29:18.548] [DEBUG] default - Buscando carrito con ID: 681949b7bdbc28b765765f88
-[2025-05-05T20:29:18.603] [HTTP] default - GET /realtimeproducts
-[2025-05-05T20:29:18.662] [DEBUG] default - Buscando carrito con ID: 681949b7bdbc28b765765f88
-[2025-05-05T20:29:18.716] [HTTP] default - GET /?mensaje=Acceso%20denegado.%20Se%20requiere%20rol%20de%20administrador.
-[2025-05-05T20:29:18.771] [DEBUG] default - Buscando carrito con ID: 681949b7bdbc28b765765f88
-[2025-05-05T20:29:19.019] [INFO] default - Nuevo cliente conectado: fM8fqVH6ekW22acyAAAd
-[2025-05-05T20:29:20.583] [DEBUG] default - Buscando carrito con ID: 681949b7bdbc28b765765f88
-[2025-05-05T20:29:20.641] [HTTP] default - GET /api/sessions/logout
-[2025-05-05T20:29:20.645] [HTTP] default - GET /
-[2025-05-05T20:29:20.940] [INFO] default - Nuevo cliente conectado: tARJHDNs-_qAZIDjAAAf
-[2025-05-05T20:29:24.082] [HTTP] default - GET /login
-[2025-05-05T20:29:24.336] [INFO] default - Nuevo cliente conectado: Rs60ANowv_SGJ5D7AAAh
-[2025-05-05T20:29:38.843] [HTTP] default - POST /api/sessions/login
-[2025-05-05T20:29:39.025] [HTTP] default - GET /
-[2025-05-05T20:29:39.247] [INFO] default - Nuevo cliente conectado: vNYAFco6ZsGEgmbCAAAj
-[2025-05-05T20:29:41.638] [HTTP] default - GET /realtimeproducts
-[2025-05-05T20:29:41.921] [INFO] default - Nuevo cliente conectado: Nf65n2Y8gTGUXiS9AAAl
-[2025-05-05T20:29:43.161] [HTTP] default - GET /profile
-[2025-05-05T20:29:43.517] [INFO] default - Nuevo cliente conectado: HKfIB4KdpGOKsW-rAAAn
-[2025-05-05T20:29:44.110] [HTTP] default - GET /
-[2025-05-05T20:29:44.385] [INFO] default - Nuevo cliente conectado: mb7u_JdRZR8pKISrAAAp
-[2025-05-05T20:29:47.157] [HTTP] default - GET /
-[2025-05-05T20:29:47.366] [INFO] default - Nuevo cliente conectado: GvcVXaqaTT-sUSAcAAAr
-[2025-05-05T20:29:50.424] [HTTP] default - GET /
-[2025-05-05T20:29:50.622] [INFO] default - Nuevo cliente conectado: mpX5n8jC0TqKwOVdAAAt
-[2025-05-05T20:29:51.923] [HTTP] default - GET /realtimeproducts
-[2025-05-05T20:29:52.179] [INFO] default - Nuevo cliente conectado: Fz2Ur-1GEI2GPOxOAAAv
-[2025-05-05T20:29:53.487] [HTTP] default - GET /
-[2025-05-05T20:29:53.765] [INFO] default - Nuevo cliente conectado: XWRVk2CdG5Hezt6bAAAx
-[2025-05-05T20:30:09.948] [HTTP] default - GET /profile
-[2025-05-05T20:30:10.369] [INFO] default - Nuevo cliente conectado: 6TEBVPbqO5lAQGg2AAAz
-[2025-05-05T20:30:11.151] [HTTP] default - GET /admin/carts
-[2025-05-05T20:30:11.707] [INFO] default - Nuevo cliente conectado: pe4xR297FmBVmuMkAAA1
-[2025-05-05T20:30:15.023] [HTTP] default - GET /profile
-[2025-05-05T20:30:15.555] [INFO] default - Nuevo cliente conectado: zlOy_fClLLsNE2JJAAA3
-[2025-05-05T20:30:16.152] [HTTP] default - GET /admin/tickets
-[2025-05-05T20:30:16.584] [INFO] default - Nuevo cliente conectado: guWqtJ8D-n-zY5iTAAA5
-[2025-05-05T20:30:18.017] [HTTP] default - GET /api/sessions/logout
-[2025-05-05T20:30:18.021] [HTTP] default - GET /
-[2025-05-05T20:30:18.501] [INFO] default - Nuevo cliente conectado: FQzUaU2cWzw0v8wjAAA7
-[2025-05-28T08:06:27.920] [INFO] default - Connected to MongoDB
-[2025-05-28T08:06:27.928] [INFO] default - Server running on port http://localhost:8080
-[2025-05-28T08:06:43.044] [INFO] default - Connected to MongoDB
-[2025-05-28T08:06:43.064] [INFO] default - Server running on port http://localhost:8080
-[2025-05-28T08:06:48.798] [HTTP] default - GET /
-[2025-05-28T08:06:49.356] [INFO] default - Nuevo cliente conectado: R81_58E63b7RC8UhAAAB
-[2025-05-28T08:06:49.905] [HTTP] default - GET /favicon.ico
-[2025-05-28T08:26:16.411] [INFO] default - Connected to MongoDB
-[2025-05-28T08:26:16.421] [INFO] default - Server running on port http://localhost:8080
-[2025-05-28T08:26:19.481] [HTTP] default - GET /
-[2025-05-28T08:26:19.919] [INFO] default - Nuevo cliente conectado: HtUQMole8ziKjKGnAAAB
-[2025-05-28T08:26:48.802] [HTTP] default - POST /api/sessions/register
-[2025-05-28T08:26:53.568] [HTTP] default - GET /login?message=register-success
-[2025-05-28T08:33:25.762] [HTTP] default - POST /api/sessions/register
-[2025-05-28T08:33:25.822] [HTTP] default - GET /register?error=Usuario%20ya%20existe
-[2025-05-28T08:34:29.716] [HTTP] default - POST /api/sessions/register
-[2025-05-28T08:34:34.262] [HTTP] default - GET /login?message=register-success
-[2025-05-28T08:35:20.073] [HTTP] default - GET /api/users
-[2025-05-28T08:35:20.077] [HTTP] default - GET /?mensaje=Acceso%20denegado.%20Se%20requiere%20rol%20de%20administrador.
-[2025-05-28T08:42:55.797] [INFO] default - Connected to MongoDB
-[2025-05-28T08:42:55.805] [INFO] default - Server running on port http://localhost:8080
-[2025-05-28T08:46:14.639] [INFO] default - Connected to MongoDB
-[2025-05-28T08:46:14.648] [INFO] default - Server running on port http://localhost:8080
+[2025-05-29T21:58:56.880] [INFO] default - Connected to MongoDB
+[2025-05-29T21:58:56.888] [INFO] default - Server running on port http://localhost:8080
+[2025-05-29T21:58:59.369] [HTTP] default - GET /
+[2025-05-29T21:58:59.937] [INFO] default - Nuevo cliente conectado: MvwhP6PViMDvGnUzAAAB
+[2025-05-29T21:59:02.850] [HTTP] default - GET /login
+[2025-05-29T21:59:03.052] [INFO] default - Nuevo cliente conectado: nI7klREhpeX-8AK8AAAD
+[2025-05-29T21:59:04.683] [HTTP] default - GET /register
+[2025-05-29T21:59:04.838] [INFO] default - Nuevo cliente conectado: uJ2V66j2yut3XNP1AAAF
+[2025-05-29T22:19:30.519] [DEBUG] default - Buscando carrito con ID: 123
+[2025-05-29T22:19:30.525] [DEBUG] default - Buscando carrito con ID: 123
+[2025-05-29T22:19:30.845] [INFO] default - Obteniendo todos los carritos
+[2025-05-29T22:19:30.853] [INFO] default - Obteniendo todos los carritos
+[2025-05-30T22:48:51.928] [INFO] default - Connected to MongoDB
+[2025-05-30T22:48:51.964] [INFO] default - Server running on port http://localhost:8080
+[2025-05-30T22:48:52.054] [HTTP] default - POST /api/sessions/register
+[2025-05-30T22:48:52.071] [HTTP] default - POST /api/sessions/register
+[2025-05-30T22:48:52.207] [HTTP] default - POST /api/sessions/register
+[2025-05-30T22:48:52.218] [HTTP] default - POST /api/sessions/login
+[2025-05-30T23:14:11.669] [INFO] default - Connected to MongoDB
+[2025-05-30T23:14:11.700] [INFO] default - Server running on port http://localhost:8080
+[2025-05-30T23:14:11.853] [HTTP] default - POST /api/sessions/register
+[2025-05-30T23:14:16.912] [HTTP] default - POST /api/sessions/register
+[2025-05-30T23:14:17.112] [HTTP] default - POST /api/sessions/register
