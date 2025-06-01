@@ -191,12 +191,11 @@ También podés correr el servidor de forma rápida utilizando la imagen disponi
 
 1. **Contrucción de la imagen**:
 
-   ```bash
-  docker build -t <Tu nombre de usuario>/server-docker:1.0.0 .
+  docker build -t < Tu nombre de usuario >/server-docker:1.0.0 .
 
 2. **Usar la imagen desde DockerHub**
-   ```bash
-  docker pull <Tu nombre de usuario>/server.docker:1.0.0
+
+  docker pull < Tu nombre de usuario >/server.docker:1.0.0
 
 ---
 ## Autor
