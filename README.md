@@ -185,7 +185,7 @@ También podés correr el servidor de forma rápida utilizando la imagen disponi
 
 ### 📦 Imagen en Docker Hub
 
-🔗 [Ver en Docker Hub](https://hub.docker.com/repository/docker/icanal/victornillo-ferreteria)
+🔗 [Ver en Docker Hub](https://hub.docker.com/repository/docker/icanal/server-docker/)
 
 ### 🐳 Docker:
 
