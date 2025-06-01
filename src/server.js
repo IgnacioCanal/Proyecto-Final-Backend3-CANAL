@@ -92,14 +92,21 @@ const startServer = async () => {
       try {
         const decoded = jwt.verify(req.cookies.token, SECRET);
         const user = await userModel.findById(decoded._id).lean();
+        if (user) {
+        user.cartId = user.cartId ? user.cartId.toString() : null;
         req.user = user;
-        res.locals.currentUser = user || null;
+        res.locals.currentUser = user;
         if (user && user.role !== "admin") {
           const cart = await cartService.getCartById(user.cartId);
           res.locals.cartCount = cart ? cart.products.reduce((acc, item) => acc + item.quantity, 0) : 0;
         } else {
           res.locals.cartCount = 0;
         }
+      } else {
+        req.user = null;
+        res.locals.currentUser = null;
+        res.locals.cartCount = 0;
+      }
       } catch (error) {
         logger.error("Error en middleware de autenticación:", error);
         req.user = null;

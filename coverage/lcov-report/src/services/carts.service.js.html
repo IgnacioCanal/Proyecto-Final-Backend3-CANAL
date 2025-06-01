@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">2.73% </span>
+                <span class="strong">13.69% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>2/73</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
-                <span class="quiet">Branches</span>
-                <span class='fraction'>0/60</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
-                <span class="quiet">Functions</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>10/73</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">3.33% </span>
-                <span class="quiet">Lines</span>
+                <span class="quiet">Branches</span>
                 <span class='fraction'>2/60</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">25% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>2/8</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">16.66% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>10/60</span>
             </div>
         
             
@@ -184,20 +184,20 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -296,21 +296,21 @@ import {getLogger} from "../utils/logger.js";
 const logger = getLogger();
 &nbsp;
 export class CartService {
-<span class="fstat-no" title="function not covered" >  as</span>ync createCart() {
-<span class="cstat-no" title="statement not covered" >    try {</span>
-<span class="cstat-no" title="statement not covered" >      return await cartDao.createCart();</span>
+  async createCart() {
+    try {
+      return await cartDao.createCart();
     } catch (error) {
 <span class="cstat-no" title="statement not covered" >      throw new Error("Error al crear carrito: " + error.message);</span>
     }
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  as</span>ync getCartById(cartId) {
-<span class="cstat-no" title="statement not covered" >    try {</span>
-<span class="cstat-no" title="statement not covered" >      if (!cartId) <span class="cstat-no" title="statement not covered" >throw new ValidationError("Falta el ID del carrito");</span></span>
-<span class="cstat-no" title="statement not covered" >      logger.debug(`Buscando carrito con ID: ${cartId}`);</span>
-      const cart = <span class="cstat-no" title="statement not covered" >await cartDao.getCartById(cartId);</span>
-<span class="cstat-no" title="statement not covered" >      if (!cart) <span class="cstat-no" title="statement not covered" >throw new NotFoundError("Carrito no encontrado");</span></span>
-<span class="cstat-no" title="statement not covered" >      return cart;</span>
+  async getCartById(cartId) {
+    try {
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (!cartId) <span class="cstat-no" title="statement not covered" >throw new ValidationError("Falta el ID del carrito");</span>
+      logger.debug(`Buscando carrito con ID: ${cartId}`);
+      const cart = await cartDao.getCartById(cartId);
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (!cart) <span class="cstat-no" title="statement not covered" >throw new NotFoundError("Carrito no encontrado");</span>
+      return cart;
     } catch (error) {
 <span class="cstat-no" title="statement not covered" >      if (error instanceof NotFoundError || error instanceof ValidationError) {</span>
 <span class="cstat-no" title="statement not covered" >        throw error;</span>
@@ -409,7 +409,7 @@ export const cartService = new CartService();</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-05-31T02:16:22.647Z
+                at 2025-06-01T16:34:52.781Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

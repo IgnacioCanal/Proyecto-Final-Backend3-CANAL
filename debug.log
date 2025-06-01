@@ -21,3 +21,257 @@
 [2025-05-30T23:14:11.853] [HTTP] default - POST /api/sessions/register
 [2025-05-30T23:14:16.912] [HTTP] default - POST /api/sessions/register
 [2025-05-30T23:14:17.112] [HTTP] default - POST /api/sessions/register
+[2025-05-31T08:08:06.303] [INFO] default - Connected to MongoDB
+[2025-05-31T08:21:58.606] [INFO] default - Connected to MongoDB
+[2025-05-31T08:21:58.743] [HTTP] default - POST /api/sessions/register
+[2025-06-01T09:35:02.501] [ERROR] default - Error connecting to MongoDB MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (C:\Users\Usuario\Desktop\CURSOS CODER HOUSE\BackEnd3\EntregaFinal\node_modules\mongoose\lib\connection.js:1165:11)
+    at NativeConnection.openUri (C:\Users\Usuario\Desktop\CURSOS CODER HOUSE\BackEnd3\EntregaFinal\node_modules\mongoose\lib\connection.js:1096:11)
+    at MongoDBProvider.connect (C:\Users\Usuario\Desktop\CURSOS CODER HOUSE\BackEnd3\EntregaFinal\src\config\mongodbProvider.js:374:27)
+    at Object.<anonymous> (C:\Users\Usuario\Desktop\CURSOS CODER HOUSE\BackEnd3\EntregaFinal\src\test\user.test.js:60:9) {
+  errorLabelSet: Set(0) {},
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'cluster0-shard-00-02.tccqu.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-00.tccqu.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-01.tccqu.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-grgbnf-shard-0',
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2025-06-01T09:43:25.022] [INFO] default - Connected to MongoDB
+[2025-06-01T09:43:25.157] [HTTP] default - POST /api/sessions/register
+[2025-06-01T09:43:30.192] [HTTP] default - POST /api/sessions/register
+[2025-06-01T09:43:33.815] [HTTP] default - POST /api/sessions/register
+[2025-06-01T09:43:34.000] [HTTP] default - POST /api/sessions/register
+[2025-06-01T09:43:37.610] [HTTP] default - POST /api/sessions/login
+[2025-06-01T10:12:38.110] [INFO] default - Connected to MongoDB
+[2025-06-01T10:12:38.245] [HTTP] default - POST /api/sessions/register
+[2025-06-01T10:12:42.199] [HTTP] default - POST /api/sessions/register
+[2025-06-01T10:12:45.908] [HTTP] default - POST /api/sessions/register
+[2025-06-01T10:12:46.102] [HTTP] default - POST /api/sessions/register
+[2025-06-01T10:12:49.671] [HTTP] default - POST /api/sessions/login
+[2025-06-01T11:00:12.788] [INFO] default - Connected to MongoDB
+[2025-06-01T11:00:12.929] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:00:17.312] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:00:21.898] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:00:22.090] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:00:26.622] [HTTP] default - POST /api/sessions/login
+[2025-06-01T11:00:26.882] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:00:30.580] [HTTP] default - POST /api/sessions/login
+[2025-06-01T11:00:30.773] [DEBUG] default - Buscando carrito con ID: 683c5cfb1358bb4ce7b0ba4f
+[2025-06-01T11:00:30.838] [HTTP] default - GET /api/sessions/current
+[2025-06-01T11:00:31.038] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:00:35.421] [HTTP] default - POST /api/sessions/restore-password
+[2025-06-01T11:00:35.745] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:00:39.455] [HTTP] default - POST /api/sessions/login
+[2025-06-01T11:00:39.648] [DEBUG] default - Buscando carrito con ID: 683c5d031358bb4ce7b0ba61
+[2025-06-01T11:00:39.701] [HTTP] default - GET /api/sessions/logout
+[2025-06-01T11:00:39.764] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:00:39.901] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:00:44.215] [HTTP] default - POST /api/sessions/login
+[2025-06-01T11:16:46.429] [INFO] default - Connected to MongoDB
+[2025-06-01T11:16:46.565] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:16:50.394] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:16:53.970] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:16:54.149] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:16:58.304] [HTTP] default - POST /api/sessions/login
+[2025-06-01T11:16:58.558] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:17:02.874] [HTTP] default - POST /api/sessions/login
+[2025-06-01T11:17:03.057] [DEBUG] default - Buscando carrito con ID: 683c60dadf8f9e657b48ce8a
+[2025-06-01T11:17:03.116] [HTTP] default - GET /api/sessions/current
+[2025-06-01T11:17:03.301] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:17:07.762] [HTTP] default - POST /api/sessions/restore-password
+[2025-06-01T11:17:07.944] [HTTP] default - POST /api/sessions/login
+[2025-06-01T11:17:08.195] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:17:12.526] [HTTP] default - POST /api/sessions/login
+[2025-06-01T11:17:12.701] [DEBUG] default - Buscando carrito con ID: 683c60e4df8f9e657b48ce9d
+[2025-06-01T11:17:12.759] [HTTP] default - GET /api/sessions/logout
+[2025-06-01T11:17:12.817] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:17:12.948] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:17:16.623] [HTTP] default - POST /api/sessions/login
+[2025-06-01T11:28:32.827] [INFO] default - Connected to MongoDB
+[2025-06-01T11:28:32.964] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:28:37.620] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:28:41.916] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:28:42.105] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:28:46.385] [HTTP] default - POST /api/sessions/login
+[2025-06-01T11:28:46.645] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:28:50.377] [HTTP] default - POST /api/sessions/login
+[2025-06-01T11:28:50.566] [DEBUG] default - Buscando carrito con ID: 683c639ea5cf931e5ee6a5a4
+[2025-06-01T11:28:50.630] [HTTP] default - GET /api/sessions/current
+[2025-06-01T11:28:50.830] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:28:54.444] [HTTP] default - POST /api/sessions/restore-password
+[2025-06-01T11:28:54.633] [HTTP] default - POST /api/sessions/login
+[2025-06-01T11:28:54.902] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:28:59.091] [HTTP] default - POST /api/sessions/login
+[2025-06-01T11:28:59.275] [DEBUG] default - Buscando carrito con ID: 683c63a7a5cf931e5ee6a5b7
+[2025-06-01T11:28:59.334] [HTTP] default - GET /api/sessions/logout
+[2025-06-01T11:28:59.394] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:28:59.522] [HTTP] default - POST /api/sessions/register
+[2025-06-01T11:29:03.657] [HTTP] default - POST /api/sessions/login
+[2025-06-01T12:28:22.111] [INFO] default - Connected to MongoDB
+[2025-06-01T12:28:22.274] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:28:22.757] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:28:22.950] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:28:23.280] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:28:23.470] [HTTP] default - POST /api/sessions/login
+[2025-06-01T12:28:23.653] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:28:23.875] [HTTP] default - POST /api/sessions/login
+[2025-06-01T12:28:24.067] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:28:24.265] [HTTP] default - POST /api/sessions/restore-password
+[2025-06-01T12:28:24.448] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:28:24.636] [HTTP] default - POST /api/sessions/login
+[2025-06-01T12:28:24.750] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:28:24.878] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:28:25.066] [HTTP] default - POST /api/sessions/login
+[2025-06-01T12:31:55.743] [INFO] default - Connected to MongoDB
+[2025-06-01T12:31:55.874] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:31:56.377] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:31:56.629] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:31:56.815] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:31:57.056] [HTTP] default - POST /api/sessions/login
+[2025-06-01T12:31:57.314] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:31:57.567] [HTTP] default - POST /api/sessions/login
+[2025-06-01T12:31:57.755] [DEBUG] default - Buscando carrito con ID: 683c726dad6eb637ae68fa4c
+[2025-06-01T12:31:57.816] [HTTP] default - GET /api/sessions/current
+[2025-06-01T12:31:58.013] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:31:58.254] [HTTP] default - POST /api/sessions/restore-password
+[2025-06-01T12:31:58.441] [HTTP] default - POST /api/sessions/login
+[2025-06-01T12:31:58.708] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:31:58.975] [HTTP] default - POST /api/sessions/login
+[2025-06-01T12:31:59.538] [DEBUG] default - Buscando carrito con ID: 683c726ead6eb637ae68fa5f
+[2025-06-01T12:31:59.595] [HTTP] default - GET /api/sessions/logout
+[2025-06-01T12:31:59.673] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:31:59.803] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:32:00.042] [HTTP] default - POST /api/sessions/login
+[2025-06-01T12:47:16.136] [INFO] default - Connected to MongoDB
+[2025-06-01T12:47:16.271] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:47:16.744] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:47:16.986] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:47:17.166] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:47:17.402] [HTTP] default - POST /api/sessions/login
+[2025-06-01T12:47:17.662] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:47:17.928] [HTTP] default - POST /api/sessions/login
+[2025-06-01T12:47:18.138] [DEBUG] default - Buscando carrito con ID: 683c760538a52899b7d03028
+[2025-06-01T12:47:18.197] [HTTP] default - GET /api/sessions/current
+[2025-06-01T12:47:18.389] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:47:18.621] [HTTP] default - POST /api/sessions/restore-password
+[2025-06-01T12:47:18.803] [HTTP] default - POST /api/sessions/login
+[2025-06-01T12:47:19.051] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:47:19.282] [HTTP] default - POST /api/sessions/login
+[2025-06-01T12:47:19.458] [DEBUG] default - Buscando carrito con ID: 683c760738a52899b7d0303b
+[2025-06-01T12:47:19.514] [HTTP] default - GET /api/sessions/logout
+[2025-06-01T12:47:19.574] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:47:19.701] [HTTP] default - POST /api/sessions/register
+[2025-06-01T12:47:19.942] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:03:33.009] [INFO] default - Connected to MongoDB
+[2025-06-01T13:03:33.140] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:03:33.673] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:03:33.929] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:03:34.124] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:03:34.380] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:03:34.643] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:03:34.889] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:03:35.101] [DEBUG] default - Buscando carrito con ID: 683c79d6c9e5896106a55b7c
+[2025-06-01T13:03:35.164] [HTTP] default - GET /api/sessions/current
+[2025-06-01T13:03:35.370] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:03:35.616] [HTTP] default - POST /api/sessions/restore-password
+[2025-06-01T13:03:35.806] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:03:36.056] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:03:36.304] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:03:36.490] [DEBUG] default - Buscando carrito con ID: 683c79d8c9e5896106a55b8f
+[2025-06-01T13:03:36.545] [HTTP] default - GET /api/sessions/logout
+[2025-06-01T13:03:36.611] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:03:36.740] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:03:36.981] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:21:23.032] [INFO] default - Connected to MongoDB
+[2025-06-01T13:21:23.164] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:21:23.671] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:21:23.935] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:21:24.125] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:21:24.390] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:21:24.651] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:21:24.900] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:21:25.088] [DEBUG] default - Buscando carrito con ID: 683c7e04c9aa74792c24406b
+[2025-06-01T13:21:25.150] [HTTP] default - GET /api/sessions/current
+[2025-06-01T13:21:25.348] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:21:25.615] [HTTP] default - POST /api/sessions/restore-password
+[2025-06-01T13:21:25.804] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:21:26.059] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:21:26.316] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:21:26.507] [DEBUG] default - Buscando carrito con ID: 683c7e06c9aa74792c24407e
+[2025-06-01T13:21:26.591] [HTTP] default - GET /api/sessions/logout
+[2025-06-01T13:21:26.654] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:21:26.781] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:21:27.026] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:29:19.450] [INFO] default - Connected to MongoDB
+[2025-06-01T13:29:19.582] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:29:20.079] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:29:20.336] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:29:20.519] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:29:20.774] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:29:21.028] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:29:21.267] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:29:21.454] [DEBUG] default - Buscando carrito con ID: 683c7fe1787d2db6a4ffd7e1
+[2025-06-01T13:29:21.519] [HTTP] default - GET /api/sessions/current
+[2025-06-01T13:29:21.717] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:29:21.962] [HTTP] default - POST /api/sessions/restore-password
+[2025-06-01T13:29:22.159] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:29:22.413] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:29:22.662] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:29:22.843] [DEBUG] default - Buscando carrito con ID: 683c7fe2787d2db6a4ffd7f4
+[2025-06-01T13:29:22.900] [HTTP] default - GET /api/sessions/logout
+[2025-06-01T13:29:22.963] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:29:23.090] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:29:23.344] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:32:05.682] [INFO] default - Connected to MongoDB
+[2025-06-01T13:32:05.826] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:32:06.343] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:32:06.602] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:32:06.786] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:32:07.028] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:32:07.280] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:32:07.520] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:32:07.708] [DEBUG] default - Buscando carrito con ID: 683c80875dd0382ef794267f
+[2025-06-01T13:32:07.769] [HTTP] default - GET /api/sessions/current
+[2025-06-01T13:32:07.994] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:32:08.245] [HTTP] default - POST /api/sessions/restore-password
+[2025-06-01T13:32:08.432] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:32:08.704] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:32:08.967] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:32:09.172] [DEBUG] default - Buscando carrito con ID: 683c80885dd0382ef7942692
+[2025-06-01T13:32:09.228] [HTTP] default - GET /api/sessions/logout
+[2025-06-01T13:32:09.296] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:32:09.427] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:32:09.683] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:34:48.540] [INFO] default - Connected to MongoDB
+[2025-06-01T13:34:48.673] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:34:49.163] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:34:49.423] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:34:49.608] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:34:49.860] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:34:50.124] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:34:50.378] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:34:50.565] [DEBUG] default - Buscando carrito con ID: 683c812a6db932698a5622c3
+[2025-06-01T13:34:50.633] [HTTP] default - GET /api/sessions/current
+[2025-06-01T13:34:50.852] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:34:51.092] [HTTP] default - POST /api/sessions/restore-password
+[2025-06-01T13:34:51.283] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:34:51.542] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:34:51.787] [HTTP] default - POST /api/sessions/login
+[2025-06-01T13:34:51.979] [DEBUG] default - Buscando carrito con ID: 683c812b6db932698a5622d6
+[2025-06-01T13:34:52.043] [HTTP] default - GET /api/sessions/logout
+[2025-06-01T13:34:52.121] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:34:52.249] [HTTP] default - POST /api/sessions/register
+[2025-06-01T13:34:52.495] [HTTP] default - POST /api/sessions/login
