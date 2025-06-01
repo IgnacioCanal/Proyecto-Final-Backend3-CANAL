@@ -2,9 +2,17 @@
 
 ## Descripción
 
-**Victornillo Ferretería** es una aplicación de ecommerce completa desarrollada como proyecto final para el curso de Programación Backend III: Testing y Escalabilidad Backend, en Coderhouse. Construida con **Node.js**, **Express**, y **MongoDB**, esta aplicación permite gestionar productos, carritos de compra, usuarios, y tickets de compra, con un enfoque en la interactividad, seguridad, y pruebas. Utiliza **Handlebars** para renderizar vistas dinámicas, **Socket.io** para actualizaciones en tiempo real, **Nodemailer** para enviar correos electrónicos, **Passport** con **JWT** para autenticación y autorización seguras, y **log4js** para un sistema robusto de logging en el servidor.
+**Victornillo Ferretería** es una aplicación de ecommerce completa desarrollada como proyecto final para el curso de **Programación Backend III: Testing y Escalabilidad Backend**, en **Coderhouse**. Construida con **Node.js**, **Express**, y **MongoDB**, esta aplicación permite gestionar productos, carritos de compra, usuarios, y tickets de compra, con un enfoque en la interactividad, seguridad, escalabilidad y pruebas automatizadas.
 
-La aplicación simula una ferretería online donde los usuarios pueden registrarse, explorar productos, agregar items a su carrito, realizar compras, y recibir confirmaciones por email. Los administradores tienen acceso a funcionalidades avanzadas, como la gestión de productos, usuarios, y tickets, además de herramientas para generar y gestionar datos simulados para pruebas. Incorpora un módulo de mocking para generar datos en español y endpoints dedicados para verificar datos simulados y persistidos.
+Utiliza **Handlebars** para renderizar vistas dinámicas, **Socket.io** para actualizaciones en tiempo real, **Nodemailer** para enviar correos electrónicos, y **Passport** con **JWT** para autenticación y autorización seguras. Además, se implementa un sistema robusto de logging con **log4js**, y generación de datos simulados en español con **faker-js** para realizar pruebas de rendimiento y consistencia de datos.
+
+Incluye un sistema de **testing automatizado** desarrollado con **Mocha**, **Jest** y **Supertest**, focalizado en endpoints clave como el de usuarios. Estos tests permiten validar funcionalidades críticas de la API asegurando su correcto comportamiento en distintos escenarios.
+
+La aplicación también cuenta con un **Dockerfile** para facilitar su despliegue en entornos de producción o pruebas. La imagen correspondiente se encuentra publicada en **DockerHub**, permitiendo ejecutar el proyecto rápidamente mediante contenedores, sin necesidad de instalaciones manuales.
+
+La aplicación simula una ferretería online donde los usuarios pueden registrarse, explorar productos, agregar ítems a su carrito, realizar compras y recibir confirmaciones por email. Los administradores tienen acceso a funcionalidades avanzadas, como la gestión de productos, usuarios y tickets, además de herramientas para generar y verificar datos de prueba.
+
+
 
 ---
 
@@ -53,6 +61,15 @@ La aplicación simula una ferretería online donde los usuarios pueden registrar
   - Sistema de logging con **log4js** para registrar eventos en el servidor (peticiones HTTP, errores, etc.).
   - Logs en consola y archivos para depuración y monitoreo.
   - Logging en el cliente con `console.log` y `console.error` para acciones en el navegador.
+- **Testing Automatizado**:
+  - Pruebas desarrolladas con **Mocha** y **Supertest**.
+  - Validación de endpoints críticos como creación de usuarios y login (`/api/users/register`, `/api/users/login`).
+  - Tests ejecutables con `npm test`.
+- **Contenerización con Docker**:
+  - Proyecto preparado con un `Dockerfile` para su despliegue mediante contenedores.
+  - Imagen publicada en **DockerHub** para facilitar su ejecución sin instalación manual.
+  - Compatible con entornos de desarrollo, prueba o producción.
+
 
 ### **Frontend**
 - **Renderizado Dinámico con Handlebars**:
@@ -65,7 +82,7 @@ La aplicación simula una ferretería online donde los usuarios pueden registrar
   - Vista detallada del carrito con productos, cantidades, y precios.
   - Botones para agregar, eliminar productos, vaciar el carrito, o finalizar la compra.
 - **Sistema de Tickets**:
-  - Vista de tickets generados tras una compra, con detalles como código, fecha, monto total, y productos comprados.
+  "Vista de los tickets generados luego de una compra, con detalles como el código, fecha, monto total y productos adquiridos."
 - **Perfil de Usuario**:
   - Muestra los datos del usuario autenticado y su carrito asociado.
 
@@ -88,6 +105,8 @@ La aplicación simula una ferretería online donde los usuarios pueden registrar
   - cors (soporte para CORS)
   - Morgan (logging de peticiones HTTP)
   - cookie-parser (manejo de cookies)
+  - Mocha (framework de testing)
+  - Supertest (pruebas de endpoints HTTP)
 - **Frontend**:
   - Handlebars (motor de plantillas)
   - Materialize CSS (framework de diseño)
@@ -95,6 +114,7 @@ La aplicación simula una ferretería online donde los usuarios pueden registrar
   - Socket.io-client (para comunicación en tiempo real)
 - **Otros**:
   - dotenv (gestión de variables de entorno)
+  - Docker (contenedorización y despliegue)
 
 ---
 
@@ -159,9 +179,28 @@ La aplicación simula una ferretería online donde los usuarios pueden registrar
 
 ---
 
-## Instalación
+## Ejecución con Docker
 
-1. **Clonar el Repositorio**:
+También podés correr el servidor de forma rápida utilizando la imagen disponible en Docker Hub.
+
+### 📦 Imagen en Docker Hub
+
+🔗 [Ver en Docker Hub](https://hub.docker.com/repository/docker/icanal/victornillo-ferreteria)
+
+### 🐳 Docker:
+
+1. **Contrucción de la imagen**:
+
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
-   cd victornillo-ferreteria
+  docker build -t <Tu nombre de usuario>/server-docker:1.0.0 .
+
+2. **Usar la imagen desde DockerHub**
+   ```bash
+  docker pull <Tu nombre de usuario>/server.docker:1.0.0
+
+---
+## Autor
+
+- **Ignacio Canal**
+- [GitHub - NaquiNacho](https://github.com/NaquiNacho)
+- Proyecto desarrollado en el curso Backend III de [Coderhouse](https://www.coderhouse.com/)
