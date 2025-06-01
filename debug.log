@@ -275,3 +275,234 @@
 [2025-06-01T13:34:52.121] [HTTP] default - POST /api/sessions/register
 [2025-06-01T13:34:52.249] [HTTP] default - POST /api/sessions/register
 [2025-06-01T13:34:52.495] [HTTP] default - POST /api/sessions/login
+[2025-06-01T14:03:32.890] [INFO] default - Connected to MongoDB
+[2025-06-01T14:03:33.030] [HTTP] default - POST /api/sessions/register
+[2025-06-01T14:03:33.508] [HTTP] default - POST /api/sessions/register
+[2025-06-01T14:03:33.767] [HTTP] default - POST /api/sessions/register
+[2025-06-01T14:03:33.954] [HTTP] default - POST /api/sessions/register
+[2025-06-01T14:03:34.196] [HTTP] default - POST /api/sessions/login
+[2025-06-01T14:03:34.454] [HTTP] default - POST /api/sessions/register
+[2025-06-01T14:03:34.702] [HTTP] default - POST /api/sessions/login
+[2025-06-01T14:03:34.890] [DEBUG] default - Buscando carrito con ID: 683c87e674c96a2e7f650eff
+[2025-06-01T14:03:34.952] [HTTP] default - GET /api/sessions/current
+[2025-06-01T14:03:35.142] [HTTP] default - POST /api/sessions/register
+[2025-06-01T14:03:35.378] [HTTP] default - POST /api/sessions/restore-password
+[2025-06-01T14:03:35.572] [HTTP] default - POST /api/sessions/login
+[2025-06-01T14:03:35.845] [HTTP] default - POST /api/sessions/register
+[2025-06-01T14:03:36.094] [HTTP] default - POST /api/sessions/login
+[2025-06-01T14:03:36.280] [DEBUG] default - Buscando carrito con ID: 683c87e774c96a2e7f650f12
+[2025-06-01T14:03:36.338] [HTTP] default - GET /api/sessions/logout
+[2025-06-01T14:03:36.400] [HTTP] default - POST /api/sessions/register
+[2025-06-01T14:03:36.533] [HTTP] default - POST /api/sessions/register
+[2025-06-01T14:03:36.774] [HTTP] default - POST /api/sessions/login
+[2025-06-01T14:04:30.403] [INFO] default - Connected to MongoDB
+[2025-06-01T14:04:30.411] [INFO] default - Server running on port http://localhost:8080
+[2025-06-01T14:04:32.236] [HTTP] default - GET /
+[2025-06-01T14:04:32.667] [INFO] default - Nuevo cliente conectado: E1MZisRWzrqi-Xm6AAAB
+[2025-06-01T14:04:33.201] [HTTP] default - GET /favicon.ico
+[2025-06-01T14:04:36.500] [HTTP] default - GET /login
+[2025-06-01T14:04:36.724] [INFO] default - Nuevo cliente conectado: Ejo97Z0n_M64fRP2AAAD
+[2025-06-01T14:04:46.564] [HTTP] default - POST /api/sessions/login
+[2025-06-01T14:04:46.764] [HTTP] default - GET /
+[2025-06-01T14:04:46.969] [INFO] default - Nuevo cliente conectado: 3LlCkMYEgFkuAD3YAAAF
+[2025-06-01T14:04:50.109] [HTTP] default - GET /profile
+[2025-06-01T14:04:50.361] [INFO] default - Nuevo cliente conectado: AkJgLMJpEI-PNUWDAAAH
+[2025-06-01T14:04:51.901] [HTTP] default - GET /admin/tickets
+[2025-06-01T14:04:52.167] [INFO] default - Nuevo cliente conectado: eVKJMUGIYpGLiM6ZAAAJ
+[2025-06-01T14:04:55.056] [HTTP] default - GET /profile
+[2025-06-01T14:04:55.299] [INFO] default - Nuevo cliente conectado: etl7JMGycDkT-pHIAAAL
+[2025-06-01T14:04:56.139] [HTTP] default - GET /admin/carts
+[2025-06-01T14:04:56.456] [INFO] default - Nuevo cliente conectado: jN2KHS083YAw6foCAAAN
+[2025-06-01T14:05:04.250] [HTTP] default - GET /profile
+[2025-06-01T14:05:04.492] [INFO] default - Nuevo cliente conectado: uon6jHjGWwhJAPSSAAAP
+[2025-06-01T14:05:06.748] [HTTP] default - GET /realtimeproducts
+[2025-06-01T14:05:06.963] [INFO] default - Nuevo cliente conectado: LBjzuOj4Ss8vmUNKAAAR
+[2025-06-01T14:05:10.528] [HTTP] default - GET /
+[2025-06-01T14:05:10.731] [INFO] default - Nuevo cliente conectado: QzHP-K0fF37Y3F-9AAAT
+[2025-06-01T14:05:22.145] [HTTP] default - GET /api/sessions/logout
+[2025-06-01T14:05:22.150] [HTTP] default - GET /
+[2025-06-01T14:05:22.354] [INFO] default - Nuevo cliente conectado: tzsrYxc2l279Kz2mAAAV
+[2025-06-01T14:05:23.456] [HTTP] default - GET /realtimeproducts
+[2025-06-01T14:05:23.462] [HTTP] default - GET /?mensaje=Acceso%20denegado.%20Se%20requiere%20rol%20de%20administrador.
+[2025-06-01T14:05:23.672] [INFO] default - Nuevo cliente conectado: bub-f_meYJh3Z8ISAAAX
+[2025-06-01T14:05:26.360] [HTTP] default - GET /
+[2025-06-01T14:05:26.596] [INFO] default - Nuevo cliente conectado: ihoVhb2h2OLLbPtMAAAZ
+[2025-06-01T14:05:37.241] [HTTP] default - GET /login
+[2025-06-01T14:05:37.399] [INFO] default - Nuevo cliente conectado: tdzI-XcyIfrj9yrvAAAb
+[2025-06-01T14:05:40.002] [HTTP] default - GET /register
+[2025-06-01T14:05:40.165] [INFO] default - Nuevo cliente conectado: _SbQvehjgjk1BxftAAAd
+[2025-06-01T14:06:02.778] [HTTP] default - POST /api/sessions/register
+[2025-06-01T14:06:06.943] [HTTP] default - GET /login?message=register-success
+[2025-06-01T14:06:07.147] [INFO] default - Nuevo cliente conectado: L8ljoJVMkn5NwuFfAAAf
+[2025-06-01T14:06:17.208] [HTTP] default - POST /api/sessions/login
+[2025-06-01T14:06:17.416] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:17.471] [HTTP] default - GET /
+[2025-06-01T14:06:17.523] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:17.717] [INFO] default - Nuevo cliente conectado: YjDdyr1vaqBb5CNnAAAh
+[2025-06-01T14:06:21.836] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:21.887] [HTTP] default - POST /api/carts/683c887a268827f7dde129d5/products/68176fa79423fa7d0f9a0819
+[2025-06-01T14:06:22.108] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:22.217] [HTTP] default - GET /
+[2025-06-01T14:06:22.272] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:22.502] [INFO] default - Nuevo cliente conectado: kZ5YE3yoVp6QZSj_AAAj
+[2025-06-01T14:06:24.858] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:24.960] [HTTP] default - GET /cart/683c887a268827f7dde129d5
+[2025-06-01T14:06:24.960] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:25.262] [INFO] default - Nuevo cliente conectado: qZvonoHGYdHkcFJPAAAl
+[2025-06-01T14:06:27.949] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:28.046] [HTTP] default - GET /cart/683c887a268827f7dde129d5
+[2025-06-01T14:06:28.047] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:28.328] [INFO] default - Nuevo cliente conectado: 3IPCu_pWEyrBj6x5AAAn
+[2025-06-01T14:06:29.273] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:29.379] [HTTP] default - GET /realtimeproducts
+[2025-06-01T14:06:29.433] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:29.537] [HTTP] default - GET /?mensaje=Acceso%20denegado.%20Se%20requiere%20rol%20de%20administrador.
+[2025-06-01T14:06:29.593] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:29.913] [INFO] default - Nuevo cliente conectado: uhANBu6Ty2KaR9prAAAp
+[2025-06-01T14:06:31.891] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:31.992] [HTTP] default - POST /api/carts/683c887a268827f7dde129d5/products/68176fa79423fa7d0f9a081d
+[2025-06-01T14:06:32.298] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:32.401] [HTTP] default - GET /?mensaje=Acceso%20denegado.%20Se%20requiere%20rol%20de%20administrador.
+[2025-06-01T14:06:32.458] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:32.680] [INFO] default - Nuevo cliente conectado: v-2RJmQYMJiq5GOtAAAr
+[2025-06-01T14:06:33.290] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:33.402] [HTTP] default - POST /api/carts/683c887a268827f7dde129d5/products/68176fa79423fa7d0f9a081b
+[2025-06-01T14:06:33.674] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:33.776] [HTTP] default - GET /?mensaje=Acceso%20denegado.%20Se%20requiere%20rol%20de%20administrador.
+[2025-06-01T14:06:33.827] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:34.075] [INFO] default - Nuevo cliente conectado: 5acPfMFPasquTB0QAAAt
+[2025-06-01T14:06:34.595] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:34.698] [HTTP] default - POST /api/carts/683c887a268827f7dde129d5/products/68176fa79423fa7d0f9a0819
+[2025-06-01T14:06:34.965] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:35.070] [HTTP] default - GET /?mensaje=Acceso%20denegado.%20Se%20requiere%20rol%20de%20administrador.
+[2025-06-01T14:06:35.120] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:35.349] [INFO] default - Nuevo cliente conectado: XqBU2oueX9S8prAgAAAv
+[2025-06-01T14:06:37.332] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:37.428] [HTTP] default - POST /api/carts/683c887a268827f7dde129d5/products/68176fa79423fa7d0f9a081b
+[2025-06-01T14:06:37.714] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:37.815] [HTTP] default - GET /?mensaje=Acceso%20denegado.%20Se%20requiere%20rol%20de%20administrador.
+[2025-06-01T14:06:37.866] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:38.121] [INFO] default - Nuevo cliente conectado: 6EI8z2hV46e7QybyAAAx
+[2025-06-01T14:06:39.177] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:39.275] [HTTP] default - POST /api/carts/683c887a268827f7dde129d5/products/68176fa79423fa7d0f9a0821
+[2025-06-01T14:06:39.548] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:39.662] [HTTP] default - GET /?mensaje=Acceso%20denegado.%20Se%20requiere%20rol%20de%20administrador.
+[2025-06-01T14:06:39.717] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:39.948] [INFO] default - Nuevo cliente conectado: pkNt1fuccz_fxZ0MAAAz
+[2025-06-01T14:06:40.423] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:40.526] [HTTP] default - POST /api/carts/683c887a268827f7dde129d5/products/68176fa79423fa7d0f9a081d
+[2025-06-01T14:06:40.827] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:40.929] [HTTP] default - GET /?mensaje=Acceso%20denegado.%20Se%20requiere%20rol%20de%20administrador.
+[2025-06-01T14:06:40.985] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:41.261] [INFO] default - Nuevo cliente conectado: GsR9D54ysM_xPkpfAAA1
+[2025-06-01T14:06:41.883] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:41.986] [HTTP] default - GET /cart/683c887a268827f7dde129d5
+[2025-06-01T14:06:41.986] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:42.350] [INFO] default - Nuevo cliente conectado: JdB-DP9LeNeDXG5FAAA3
+[2025-06-01T14:06:44.243] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:44.351] [HTTP] default - DELETE /api/carts/683c887a268827f7dde129d5/products/68176fa79423fa7d0f9a0819
+[2025-06-01T14:06:44.586] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:44.695] [HTTP] default - GET /cart/683c887a268827f7dde129d5
+[2025-06-01T14:06:44.695] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:44.937] [INFO] default - Nuevo cliente conectado: -Z_dPOTy4fdTBld2AAA5
+[2025-06-01T14:06:46.500] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:46.605] [HTTP] default - DELETE /api/carts/683c887a268827f7dde129d5
+[2025-06-01T14:06:46.817] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:46.869] [HTTP] default - GET /cart/683c887a268827f7dde129d5
+[2025-06-01T14:06:46.869] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:47.074] [INFO] default - Nuevo cliente conectado: bErl2QzHEdk1FC9bAAA7
+[2025-06-01T14:06:48.477] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:48.526] [HTTP] default - GET /cart/683c887a268827f7dde129d5
+[2025-06-01T14:06:48.526] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:48.717] [INFO] default - Nuevo cliente conectado: jnfmlRGAuwF0WVtcAAA9
+[2025-06-01T14:06:50.929] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:50.980] [HTTP] default - GET /
+[2025-06-01T14:06:51.031] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:51.347] [INFO] default - Nuevo cliente conectado: EEc25BfqfRQGt7hRAAA_
+[2025-06-01T14:06:52.165] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:52.215] [HTTP] default - POST /api/carts/683c887a268827f7dde129d5/products/68176fa79423fa7d0f9a081d
+[2025-06-01T14:06:52.449] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:52.554] [HTTP] default - GET /
+[2025-06-01T14:06:52.606] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:52.836] [INFO] default - Nuevo cliente conectado: 0SsBPebbl208_XM5AABB
+[2025-06-01T14:06:53.420] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:53.517] [HTTP] default - POST /api/carts/683c887a268827f7dde129d5/products/68176fa79423fa7d0f9a081b
+[2025-06-01T14:06:53.789] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:53.892] [HTTP] default - GET /
+[2025-06-01T14:06:53.944] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:54.263] [INFO] default - Nuevo cliente conectado: F-LJYBlaYjPE-a6pAABD
+[2025-06-01T14:06:54.771] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:54.871] [HTTP] default - POST /api/carts/683c887a268827f7dde129d5/products/68176fa79423fa7d0f9a0819
+[2025-06-01T14:06:55.127] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:55.228] [HTTP] default - GET /
+[2025-06-01T14:06:55.279] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:55.534] [INFO] default - Nuevo cliente conectado: CuI7a-59GldBSBWYAABF
+[2025-06-01T14:06:56.156] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:56.256] [HTTP] default - GET /cart/683c887a268827f7dde129d5
+[2025-06-01T14:06:56.257] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:56.583] [INFO] default - Nuevo cliente conectado: OPS0hY2qu7vZNJumAABH
+[2025-06-01T14:06:57.900] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:58.002] [HTTP] default - POST /api/carts/683c887a268827f7dde129d5/purchase
+[2025-06-01T14:06:58.003] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:58.745] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:06:58.798] [HTTP] default - GET /tickets/683c88b2268827f7dde12b6c
+[2025-06-01T14:06:59.048] [INFO] default - Nuevo cliente conectado: u7UJa15XBi8tpnHYAABJ
+[2025-06-01T14:07:01.622] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:01.673] [HTTP] default - GET /tickets
+[2025-06-01T14:07:01.974] [INFO] default - Nuevo cliente conectado: 0sQxI6QiOSoy1Io4AABL
+[2025-06-01T14:07:03.577] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:03.630] [HTTP] default - GET /profile
+[2025-06-01T14:07:03.861] [INFO] default - Nuevo cliente conectado: qKWNdiXjQXk-Wu4EAABN
+[2025-06-01T14:07:05.762] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:05.820] [HTTP] default - GET /cart/683c887a268827f7dde129d5
+[2025-06-01T14:07:05.820] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:06.052] [INFO] default - Nuevo cliente conectado: ptgNk8sMjyrPUHPYAABP
+[2025-06-01T14:07:06.897] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:06.948] [HTTP] default - GET /realtimeproducts
+[2025-06-01T14:07:07.022] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:07.076] [HTTP] default - GET /?mensaje=Acceso%20denegado.%20Se%20requiere%20rol%20de%20administrador.
+[2025-06-01T14:07:07.127] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:07.357] [INFO] default - Nuevo cliente conectado: -0FCQlPlLrsvnQKaAABR
+[2025-06-01T14:07:08.067] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:08.115] [HTTP] default - GET /
+[2025-06-01T14:07:08.166] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:08.397] [INFO] default - Nuevo cliente conectado: HSaZpP2SchweC0w7AABT
+[2025-06-01T14:07:08.970] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:09.021] [HTTP] default - POST /api/carts/683c887a268827f7dde129d5/products/68176fa79423fa7d0f9a081b
+[2025-06-01T14:07:09.236] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:09.338] [HTTP] default - GET /
+[2025-06-01T14:07:09.390] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:09.668] [INFO] default - Nuevo cliente conectado: w-hQP99royEfRyPvAABV
+[2025-06-01T14:07:10.158] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:10.260] [HTTP] default - POST /api/carts/683c887a268827f7dde129d5/products/68176fa79423fa7d0f9a0821
+[2025-06-01T14:07:10.527] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:10.646] [HTTP] default - GET /
+[2025-06-01T14:07:10.702] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:10.960] [INFO] default - Nuevo cliente conectado: 5f9vHlakf7QRNHbIAABX
+[2025-06-01T14:07:12.787] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:12.914] [HTTP] default - GET /cart/683c887a268827f7dde129d5
+[2025-06-01T14:07:12.915] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:13.198] [INFO] default - Nuevo cliente conectado: D6PyriCuDzc4zXpPAABZ
+[2025-06-01T14:07:16.689] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:16.809] [HTTP] default - POST /api/carts/683c887a268827f7dde129d5/purchase
+[2025-06-01T14:07:16.810] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:17.431] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:17.486] [HTTP] default - GET /tickets/683c88c5268827f7dde12bdc
+[2025-06-01T14:07:17.741] [INFO] default - Nuevo cliente conectado: U6DfouRVjK_z-ODhAABb
+[2025-06-01T14:07:18.241] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:18.321] [HTTP] default - GET /profile
+[2025-06-01T14:07:18.551] [INFO] default - Nuevo cliente conectado: vLXb1Nvz8ZjyFMldAABd
+[2025-06-01T14:07:19.719] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:19.769] [HTTP] default - GET /tickets
+[2025-06-01T14:07:20.051] [INFO] default - Nuevo cliente conectado: Q9pU4EJUTomHaXYzAABf
+[2025-06-01T14:07:22.359] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:22.408] [HTTP] default - GET /tickets/683c88c5268827f7dde12bdc
+[2025-06-01T14:07:22.660] [INFO] default - Nuevo cliente conectado: skJUw-n7Xbi7O40IAABh
+[2025-06-01T14:07:26.706] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:26.755] [HTTP] default - GET /
+[2025-06-01T14:07:26.811] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:27.106] [INFO] default - Nuevo cliente conectado: bu_9KmjcNHtl6a7lAABj
+[2025-06-01T14:07:29.440] [DEBUG] default - Buscando carrito con ID: 683c887a268827f7dde129d5
+[2025-06-01T14:07:29.490] [HTTP] default - GET /api/sessions/logout
+[2025-06-01T14:07:29.503] [HTTP] default - GET /
+[2025-06-01T14:07:29.706] [INFO] default - Nuevo cliente conectado: _WZ6-uCE0iAieBmSAABl
